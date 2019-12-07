@@ -35,7 +35,8 @@ body {
     margin: 10% auto;
     padding: 20px;
     background: whitesmoke;
-    height: 300px;
+    height: 220px;
+    top: 100;
     border-radius: 2px;
 }
 
@@ -72,18 +73,12 @@ input[type=text]:focus {
     border-color:#333;
 }
 
-input[type=submit] {
-    padding:5px 15px; 
-    background:#ccc; 
-    border:0 none;
-    cursor:pointer;
-    border-radius: 5px; 
-}
 
 .inp {
     min-width: 500px;
     position: absolute;
     top: 50px;
+    height: 25px;
 }
 
 .fio1 {
@@ -125,7 +120,21 @@ input[type=submit] {
     text-align: center;
     color: white;
     position: relative;
-    top: 8px;
+    top: 178px;
+    background-color: #ffea00;
+    border: 0;
+    border-radius: 3.5px;
+    width: 230px;
+    height: 47px;
+    right: -135;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    color: white;
+}
+
+.rla:hover{
+    background: #e7d400;
 }
 
 .otvet {
@@ -174,8 +183,8 @@ left: 490px;
     color: #000;
     font-weight: bold;
     font-style: 20px;
-    top: 0;
-    right: -10;
+    top: 6;
+    right: 12;
     text-decoration: none;
     width: 30px;
     height: 30px;
@@ -212,4 +221,15 @@ left: 490px;
     background:#ffea00; 
     left: 395px;
     top: 300px; 
+    transition: 0.3s linear;
      }
+
+     .ccc{
+        width: 30pt;
+     }
+
+     @media screen and (max-width: 1000px) {
+        body {
+  
+        }
+      }
