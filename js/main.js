@@ -41,3 +41,24 @@ $(document).ready(function() {
      return pattern.test(emailAddress);
      }
      
+     $(function() {
+      $('.error').hide();
+      $(".button").click(function() {
+        // validate and process form here
+        
+        $('.error').hide();
+        var name = $("input#name").val();
+        if (name == "") {
+          $("input#name").focus();
+          return false;
+        }
+        var email = $("input#email").val();
+        if (email == "") {
+          $("input#email").focus();
+          return false;
+        }
+
+        
+      });
+    });
+

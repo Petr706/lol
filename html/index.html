@@ -43,13 +43,13 @@
 </head>
 <body>
     <div class="contain flex">
-        <div class="button1">
             <a href="#modal" class="button"> Оставить Заявку</a>
             <div class="modal" id="modal">
-                <form method="post" id="ajax_form" action="">
+                <form method="post" id="ajax_form" action="" onsubmit='alert ("Заявка Отправлена!")'>
                 <div class="popup">
                     <a href="" class="close1"><img src="../k.jpg" class="ccc"></a>
-                  <form action="#" class="form">
+                  <form class="form">
+            
                     <div>
                       
                             <label for="fio" name="fio" class="fio" data-validate> ФИО </label>
@@ -62,21 +62,15 @@
                             <input type="email" name="email" required id="validate" placeholder="example@gmail.com" class="inp1">
                             
                           </div>
-                          <input value="Оставить Заявку" class="rla" type="submit">
+                          <a href="#result_form" id="submit" class="rlo"><input value="Оставить Заявку" class="rla" type="submit"></a>
                           </div>
                           </a>
-                          
                         </form>
                 </div>
             </div>
         </div>
     </div>
-    <div id="result_form" class="otvet">
-            <h3 class="ff">
-              Заявка Отправлена!
-            </h3>
-            <a href="" class="close">X</a>
-    </div> 
+    
 
 </body>
 </html>
