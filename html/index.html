@@ -40,12 +40,13 @@
      return pattern.test(emailAddress);
      }
     </script>
+                
 </head>
 <body>
-    <div class="contain flex">
+    <div class="knopka">
             <a href="#modal" class="button"> Оставить Заявку</a>
             <div class="modal" id="modal">
-                <form method="post" id="ajax_form" action="" onsubmit='alert ("Заявка Отправлена!")'>
+                <form method="post" id="ajax_form" action="" onsubmit='location.href ="#otvet"'>
                 <div class="popup">
                     <a href="" class="close1"><img src="../k.jpg" class="ccc"></a>
                   <form class="form">
@@ -57,12 +58,12 @@
                     
                           </div>
                     <div>
-                      
+
                             <label for="email" name="email" class="fio1"> Email</label>
                             <input type="email" name="email" required id="validate" placeholder="example@gmail.com" class="inp1">
                             
                           </div>
-                          <a href="#result_form" id="submit" class="rlo"><input value="Оставить Заявку" class="rla" type="submit"></a>
+                          <a id="submit" class="rlo"><input value="Оставить Заявку" class="rla" type="submit"></a>
                           </div>
                           </a>
                         </form>
@@ -71,7 +72,14 @@
         </div>
     </div>
     
-
+    <div class="otp" id="otvet">
+      <div class="kik">
+        <h3 class="klk">
+          Заявка Отправлена!
+        </h3>
+        <a href="" class="close1"><img src="../k.jpg" class="ccc"></a>
+      </div>
+      </div>
 </body>
 </html>
 

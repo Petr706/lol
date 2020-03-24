@@ -1,5 +1,6 @@
 
 
+
 body {
     background-color: white;
     margin: 0 auto;
@@ -7,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 * {
@@ -37,6 +40,37 @@ body {
     display: block;
     pointer-events: auto;
 
+}
+
+
+
+.otp {
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    pointer-events: none;
+    z-index: 99999;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.otp:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.kik {
+    width: 500px;
+    margin: 25% auto;
+    padding: 20px;
+    background: whitesmoke;
+    height: 50px;
+    border-radius: 2px;
+    display: flex;
+    position: relative;
 }
 
 .popup {
@@ -105,22 +139,6 @@ input[type=text]:focus {
     height: 25px;
 }
 
-.button2 {
-        text-decoration:none; 
-        text-align:center; 
-        padding:0px 66px; 
-        border:none; 
-        font-weight:bold; 
-        color:#ffffff; 
-        background:#ffea00; 
-        top: 220px;
-        position: absolute; 
-        left: 130px;
-        width: 150px;
-        height: 40px;
-         
-}
-
 .rla {
     text-decoration: none;
     text-align: center;
@@ -142,36 +160,6 @@ input[type=text]:focus {
 
 .rla:hover{
     background: #e7d400;
-}
-
-.otvet {
-    position: absolute;
-    width: 150px;
-    height: 85px;
-    display: none;
-    border-radius: 3px;
-    border: 3px;
-    border-style: dashed;
-    color: black;
-    display: none;
-}
-
-
-.otvet:target {
-    display: block;
-    position: relative;
-    float: right;
-}
-
-.ppp {
-    width: 500px;
-    position: relative;
-    margin: 10% auto;
-    padding: 20px;
-    background: whitesmoke;
-    height: 300px;
-    border-radius: 2px;
-    opacity: 0;
 }
 
 #validEmail {
@@ -197,24 +185,6 @@ left: 490px;
     cursor: pointer;
 }
 
-.close {
-    color: #000;
-    font-weight: bold;
-    font-style: 20px;
-    top: 0;
-    right: -12;
-    text-decoration: none;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    position: absolute;
-}
-
-
-
-.ff {
-    text-align: center;
-}
 
 .button{
     text-decoration:none; 
@@ -233,17 +203,109 @@ left: 490px;
         width: 30pt;
      }
 
-     @media (max-width: 980px) {
-        .button {
+     .knopka {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 15%;
+    }
 
-        }
 
-        
-      }
+.klk {
+    font-size: 1.7em;
+    color: red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 2% auto;
+    position: relative;
+}
 
-.k {
-    width: 12px;
-    margin-top: -80px;
-    float: right;
-    margin-right: 3px;
+@media screen and (max-width: 1000px) {
+    .button {
+        text-decoration:none; 
+        text-align: center;
+
+    }
+
+    .fio {
+        font-size: 5em;
+        width: 50%;
+        text-align: center;
+        position: fixed;
+        top: 12%;
+    }
+    
+    body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    }
+
+    .knopka {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    }
+
+    .popup {
+    width: 80%;
+    height: 50%;
+    }
+
+    .inp {
+        min-width: 85%;
+        top: 200px;
+        height: 65px;
+        left: 7%;
+    }
+
+    ::-webkit-input-placeholder {font-size: 3.5em;}
+    ::-moz-placeholder          {font-size: 3.5em;}/* Firefox 19+ */
+    :-moz-placeholder           {font-size: 3.5em;}/* Firefox 18- */
+    :-ms-input-placeholder      {font-size: 3.5em;}
+
+    .fio1 {
+        font-size: 5em;
+        width: 40%;
+        text-align: center;
+        top: 320px;
+    }
+
+    .inp1 {
+        min-width: 85%;
+        top: 500px;
+        height: 65px;
+        left: 7%;
+    }
+
+    .rla {
+        width: 90%;
+        height: 10%;
+        left: 5%;
+        top: 750px;
+    }
+
+    .ccc {
+        width: 100pt;
+        left: 100px;
+    }
+
+    .close1 {
+        left: 82%;
+    }
+
+    .kik {
+        height: 25%;
+        width: 85%;
+    }
+
+    .klk {
+        font-size: 50pt;
+    }
+
 }
