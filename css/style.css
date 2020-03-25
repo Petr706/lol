@@ -80,10 +80,13 @@ body {
     padding: 20px;
     background: whitesmoke;
     height: 220px;
-    top: 100;
     border-radius: 2px;
-
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    top: 50%;
 }
+
 
 .button:hover {
     background: #e7d400;
