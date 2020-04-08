@@ -28,11 +28,7 @@ body {
     pointer-events: none;
     z-index: 99999;
     display: none;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+
 
 }
 
@@ -74,16 +70,13 @@ body {
 }
 
 .popup {
-    width: 500px;
-    position: relative;
-    margin: 10% auto;
+    position: absolute;
+    width: 550px;
     padding: 20px;
     background: whitesmoke;
-    height: 220px;
     border-radius: 2px;
     left: 50%;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     top: 50%;
 }
 
@@ -93,9 +86,8 @@ body {
 }
 
 .fio {
-position: absolute;
-top: 10px;
-left: 250px;
+display: block;
+
 }
 
 h2 {
@@ -119,13 +111,10 @@ input[type=text]:focus {
 
 .inp {
     min-width: 500px;
-    position: absolute;
     top: 50px;
-    height: 25px;
 }
 
 .fio1 {
-    position: absolute;
     top: 100px;
     left: 250px;
     color: #000;
@@ -133,26 +122,28 @@ input[type=text]:focus {
 }
  
 .inp1 {
-    min-width: 500px;
-    position: absolute;
+    min-width: 150px;
     top: 140px;
     padding:5px; 
     border:2px solid #ccc; 
     border-radius: 5px;
-    height: 25px;
+    width: 500px;
+}
+
+.imya {
+    display: block;
+    margin: 15px auto; /*для примера*/
 }
 
 .rla {
     text-decoration: none;
     text-align: center;
     color: white;
-    position: relative;
     top: 178px;
     background-color: #ffea00;
     border: 0;
     border-radius: 3.5px;
     width: 230px;
-    height: 47px;
     right: -135;
     font-size: 23px;
     cursor: pointer;
@@ -224,7 +215,7 @@ left: 490px;
     position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 800px) {
     .button {
         text-decoration:none; 
         text-align: center;
@@ -255,24 +246,14 @@ left: 490px;
     
     }
 
-    .popup {
-    width: 80%;
-    height: 50%;
-    }
 
-    .inp {
-        min-width: 85%;
-        top: 200px;
-        height: 65px;
-        left: 7%;
-    }
 
     ::-webkit-input-placeholder {font-size: 3.5em;}
     ::-moz-placeholder          {font-size: 3.5em;}/* Firefox 19+ */
     :-moz-placeholder           {font-size: 3.5em;}/* Firefox 18- */
     :-ms-input-placeholder      {font-size: 3.5em;}
 
-    .fio1 {
+  /*  .fio1 {
         font-size: 5em;
         width: 40%;
         text-align: center;
@@ -311,4 +292,4 @@ left: 490px;
         font-size: 50pt;
     }
 
-}
+}*/
