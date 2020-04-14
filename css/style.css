@@ -26,14 +26,12 @@ body {
     left: 0;
     background: rgba(0,0,0,.5);
     pointer-events: none;
-    z-index: 99999;
+    z-index: 99998;
     display: none;
 }
 
-.modal:target {
+.modal_visible {
     display: block;
-    pointer-events: auto;
-
 }
 
 
@@ -76,11 +74,8 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     top: 50%;
-    display: none;
-}
-
-.popup_visible {
-    display: block;
+    display: inline-block;
+    z-index: 99999;
 }
 
 .button:hover {

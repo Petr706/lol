@@ -9,6 +9,6 @@ $( document ).ready(function() {
 
 $(document).ready(function(){
 	$(".button").click(function(){
-		$(".popup").toggleClass("popup_visible"); return false;
+		$(".modal").toggleClass("modal_visible"); return false;
 	});
 });
