@@ -28,8 +28,6 @@ body {
     pointer-events: none;
     z-index: 99999;
     display: none;
-
-
 }
 
 .modal:target {
@@ -78,8 +76,12 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     top: 50%;
+    display: none;
 }
 
+.popup_visible {
+    display: block;
+}
 
 .button:hover {
     background: #e7d400;

@@ -6,3 +6,9 @@ $( document ).ready(function() {
   }
 );
 });
+
+$(document).ready(function(){
+	$(".knopka").click(function(){
+		$(".popup").toggleClass("popup_visible"); return false;
+	});
+});
