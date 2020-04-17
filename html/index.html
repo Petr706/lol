@@ -6,31 +6,38 @@
      <link rel="stylesheet" href="../css/style.css">
      <link rel="stylesheet" href="../css/aaa.css">
      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
      <script src="../js/main.js"></script>
   </head>
   <body>
-     <div class="knopka">
-        <a href="#modal" class="button"> Оставить Заявку</a>
-     </div>
+      <a href="#modal" class="button__big"> Оставить Заявку</a>
      <div class="modal" id="modal">
-        <div class="popup">
-           <a href="" class="close1"><img src="../k.jpg" class="ccc"></a>
-           <form method="post" id="ajax_form" action="" onsubmit='location.href ="#otvet"'>
-           <form class="form">
-              <div class="imya">       
-                 <label for="fio" name="fio" class="fio" data-validate> ФИО </label>
-                 <input type="text" name="name" required minlength="4" placeholder="Иванов Иван Иванович" class="inp">
+        <div class="modal__window">
+           <a class="modal__close">×</a>
+        <div class="modal__content.modal__content_form">
+           <form id="ajax_form" action="" onsubmit='location.href ="#otvet"'>
+              <div class="modal__form-element-wrap">       
+                 <label for="fio" name="fio" class="modal__label" data-validate> ФИО </label>
+                 <input type="text" name="name" required minlength="4" placeholder="Иванов Иван Иванович" class="modal__input">
               </div>
-              <div class="meil">
-                 <label for="email" name="email" class="fio1"> Email</label>
-                 <input type="email" name="email" required id="validate" placeholder="example@gmail.com" class="inp1">            
+              <div class="modal__form-element-wrap">
+                 <label for="email" name="email" class="modal__label"> Email</label>
+                 <input type="email" name="email" required id="validate" placeholder="example@gmail.com" class="modal__input">            
               </div>
-              <a id="submit" class="rlo"><input value="Оставить Заявку" class="rla" type="submit"></a>
+              <a><input value="Оставить Заявку" class="modal__button" type="submit"></a>
            </form>
-           </form>
-        </div>
-     </div>
-     <div class="otp" id="otvet">
+           </div>
+         </div>
+         <div class="modal__content.modal__content_loading">
+            <div class="modal__content.mpdal__content_success">
+
+            </div>
+            <div class="modal__content.modal__content_error">
+
+            </div>
+         </div>
+      </div>
+     <div class="answer" id="otvet">
         <div class="kik">
            <h3 class="klk">
               Заявка Отправлена!

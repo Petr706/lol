@@ -1,216 +1,180 @@
 
-
-
 body {
-    background-color: white;
-    margin: 0 auto;
-    height: 726px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+	background-color: white;
+	margin: 0 auto;
+	height: 726px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 
 * {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-
 .modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0,0,0,.5);
-    pointer-events: none;
-    z-index: 99998;
-    display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 99998;
+	display: none;
 }
 
 .modal_visible {
-    display: block;
+	display: block;
 }
 
-
-
-.otp {
-    position: fixed;
-    background: rgba(0,0,0,.5);
-    pointer-events: none;
-    z-index: 99999;
-    display: none;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+.answer {
+	position: fixed;
+	background: rgba(0, 0, 0, .5);
+	pointer-events: none;
+	z-index: 99999;
+	display: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
 }
 
-.otp:target {
-    display: block;
-    pointer-events: auto;
+.answer:target {
+	display: block;
+	pointer-events: auto;
 }
 
 .kik {
-    width: 500px;
-    margin: 25% auto;
-    padding: 20px;
-    background: whitesmoke;
-    height: 50px;
-    border-radius: 2px;
-    display: flex;
-    position: relative;
+	width: 500px;
+	margin: 25% auto;
+	padding: 20px;
+	background: whitesmoke;
+	height: 50px;
+	border-radius: 2px;
+	display: flex;
+	position: relative;
 }
 
-.popup {
-    position: absolute;
-    width: 550px;
-    padding: 20px;
-    background: whitesmoke;
-    border-radius: 2px;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    display: inline-block;
-    z-index: 99999;
+.modal__window {
+	position: absolute;
+	width: 550px;
+	padding: 20px;
+	background: whitesmoke;
+	border-radius: 2px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	top: 50%;
+	display: block;
+	z-index: 99999;
 }
 
-.button:hover {
-    background: #e7d400;
-}
-
-.fio {
-display: block;
-
+.modal__label {
+	display: block;
 }
 
 h2 {
-    position: absolute;
-    left: 270px;
-    font-size: 50px;
-    top: -20px;
+	position: absolute;
+	left: 270px;
+	font-size: 50px;
+	top: -20px;
 }
 
 input[type=text] {
-    padding:5px; 
-    border:2px solid #ccc; 
-    border-radius: 5px;
-    width: 100px;
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	width: 100px;
 }
 
 input[type=text]:focus {
-    border-color:#333;
+	border-color: #333;
+}
+
+input[type=email] {
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	width: 100px;
+}
+
+input[type=email]:focus {
+	border-color: #333;
+}
+
+.modal__input {
+	min-width: 500px;
+}
+
+.modal__form-element-wrap {
+	display: block;
+	margin: 15px auto;
+}
+
+.modal__button {
+	text-decoration: none;
+	text-align: center;
+	top: 178px;
+	background-color: #ffea00;
+	border: 0;
+	border-radius: 3.5px;
+	width: 230px;
+	right: -135;
+	font-size: 23px;
+	cursor: pointer;
+	transition: 0.3s linear;
+	color: white;
+}
+
+.modal__button:hover {
+	background: #e7d400;
 }
 
 
-.inp {
-    min-width: 500px;
-    top: 50px;
+
+.modal__close {
+	color: #000;
+	font-weight: bold;
+	top: -5;
+	right: 5;
+	text-decoration: none;
+	font-size: 35px;
+	position: absolute;
+	cursor: pointer;
 }
 
-.fio1 {
-    top: 100px;
-    left: 250px;
-    color: #000;
-    font-size: 20px;
-}
- 
-.inp1 {
-    min-width: 150px;
-    top: 140px;
-    padding:5px; 
-    border:2px solid #ccc; 
-    border-radius: 5px;
-    width: 500px;
+.button__big {
+	text-decoration: none;
+	padding: 11px 32px;
+	border: none;
+	font: 50px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+	background: #ffea00;
+	transition: 0.3s linear;
+	position: relative;
 }
 
-.imya {
-    display: block;
-    margin: 15px auto; /*для примера*/
+.button__big:hover {
+	background: #e7d400;
 }
 
-.rla {
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    top: 178px;
-    background-color: #ffea00;
-    border: 0;
-    border-radius: 3.5px;
-    width: 230px;
-    right: -135;
-    font-size: 23px;
-    cursor: pointer;
-    transition: 0.3s linear;
-    color: white;
+.modal__close_img {
+	width: 30pt;
 }
-
-
-.rla:hover{
-    background: #e7d400;
-}
-
-#validEmail {
-margin-top: 4px;
-margin-left: 9px;
-position: absolute;
-width: 16px;
-height: 16px;
-top: 141px;
-left: 490px;
-}
-
-.close1 {
-    color: #000;
-    font-weight: bold;
-    font-style: 20px;
-    top: 6;
-    right: 12;
-    text-decoration: none;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
-}
-
-
-.button{
-    text-decoration:none; 
-    padding:11px 32px; 
-    border:none; 
-    font:50px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    font-weight:bold; 
-    color:#ffffff; 
-    background:#ffea00; 
-    transition: 0.3s linear;
-    position: relative;
-  }
-
-
-     .ccc{
-        width: 30pt;
-     }
-
-     .knopka {
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        height: 15%;
-    }
-
 
 .klk {
-    font-size: 1.7em;
-    color: red;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin: 2% auto;
-    position: relative;
+	font-size: 1.7em;
+	color: red;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	margin: 2% auto;
+	position: relative;
 }
+
 
 /*@media screen and (max-width: 800px) {
     .button {
@@ -247,10 +211,20 @@ left: 490px;
 
     ::-webkit-input-placeholder {font-size: 3.5em;}
     ::-moz-placeholder          {font-size: 3.5em;}/* Firefox 19+ */
-    :-moz-placeholder           {font-size: 3.5em;}/* Firefox 18- */
-    :-ms-input-placeholder      {font-size: 3.5em;}
 
-  /*  .fio1 {
+ :-moz-placeholder {
+	font-size: 3.5em;
+}
+
+
+/* Firefox 18- */
+
+ :-ms-input-placeholder {
+	font-size: 3.5em;
+}
+
+
+/*  .fio1 {
         font-size: 5em;
         width: 40%;
         text-align: center;
